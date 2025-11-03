@@ -1,0 +1,126 @@
+/* app/globals.css */
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #333333;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-poppins);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  /* Arial, Helvetica, */
+  font-family: var(--font-poppins), sans-serif;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-out;
+}
+
+.home-hero-bg {
+  background-image: url("../public/home-hero-mobile.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1024px) {
+  .home-hero-bg {
+    background-image: url("../public/home-hero-desktop.png");
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 25s linear infinite;
+}
+
+.home-rq-bg {
+  background-image: url("../public/home-rq-mobile.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1024px) {
+  .home-rq-bg {
+    background-image: url("../public/home-rq-desktop.png");
+  }
+}
+
+.footer-bg {
+  background-image: url("../public/footer-mobile.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1024px) {
+  .footer-bg {
+    background-image: url("../public/footer-desktop.png");
+  }
+}
+
+.services-hero-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1024px) {
+  .services-hero-bg {
+    background-image: url("../public/services-hero-bg.png");
+  }
+}
+
+.list-circle {
+  list-style: circle;
+  list-style-type: circle;
+}
+
+.quote-hero-bg {
+  background-image: url("../public/quote-hero-mobile.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1024px) {
+  .quote-hero-bg {
+    background-image: url("../public/quote-hero-desktop.png");
+  }
+}
