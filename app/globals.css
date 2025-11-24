@@ -124,3 +124,122 @@ body {
     background-image: url("../public/quote-hero-desktop.png");
   }
 }
+
+/* RESPONSIVE DESIGN CODE STARTS HERE */
+
+.home-hero-heading {
+  font-size: 24px;
+  line-height: 38px;
+}
+
+.home-hero-p {
+  font-size: 10px;
+  line-height: 16px;
+}
+
+.home-about-img {
+  width: 316px;
+  height: 338px;
+}
+
+.home-services-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  max-width: 315px;
+}
+
+@media (min-width: 375px) {
+  .home-hero-heading {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 480px) {
+  .home-hero-p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .home-about-img {
+    width: 404px;
+    height: 432px;
+  }
+
+  .home-services-grid {
+    max-width: 100%;
+    max-width: 360px;
+  }
+}
+
+@media (min-width: 600px) {
+  .home-hero-heading {
+    font-size: 48px;
+    line-height: 70px;
+  }
+
+  .home-about-img {
+    width: 504px;
+    height: 540px;
+  }
+
+  .home-services-grid {
+    max-width: 360px;
+  }
+}
+
+@media (min-width: 768px) {
+  .home-hero-heading {
+    font-size: 56px;
+    line-height: 80px;
+  }
+
+  .home-hero-p {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .home-services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 820px) {
+  .home-hero-heading {
+    font-size: 60px;
+    line-height: 90px;
+  }
+
+  .home-hero-p {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .home-services-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-hero-heading {
+    font-size: 48px;
+    line-height: 70px;
+  }
+
+  .home-hero-p {
+    font-size: 14px;
+    line-height: 1.428571;
+  }
+}
+
+@media (min-width: 1280px) {
+  .home-hero-heading {
+    font-size: 60px;
+  }
+
+  .home-hero-p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}

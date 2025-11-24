@@ -9,12 +9,12 @@ export default function Home() {
       {/* Hero */}
       <section className="w-full h-screen home-hero-bg flex flex-col lg:flex-row pt-32.75 lg:pt-55.5">
         <div className="flex flex-col px-7.5 lg:px-10 xl:px-20 gap-3.75 lg:gap-5">
-          <div className="flex flex-col gap-3 lg:gap-6.5 max-w-100 lg:max-w-150 xl:max-w-169">
-            <h1 className="font-bold text-[28px] lg:text-5xl xl:text-6xl leading-9.5 lg:leading-17.5 tracking-normal text-white">
+          <div className="flex flex-col gap-3 lg:gap-6.5 max-w-full lg:max-w-150 xl:max-w-169">
+            <h1 className="font-bold lg:font-medium home-hero-heading leading-9.5 lg:leading-17.5 tracking-normal text-white">
               Trusted Supplier of Tyres, Lubricants and Batteries in Nigeria.
             </h1>
 
-            <p className="font-normal text-[10px] lg:text-sm xl:text-base leading-4 lg:leading-6.5 tracking-normal lg:max-w-140 xl:max-w-159.5 text-[#F3F3F3]">
+            <p className="font-normal home-hero-p leading-4 lg:leading-6.5 tracking-normal lg:max-w-140 xl:max-w-159.5 text-[#F3F3F3]">
               Octopod Services delivers quality car and truck tyres, automotive batteries, and
               high-performance engine oils & lubricants for businesses across Nigeria.
             </p>
@@ -72,7 +72,7 @@ export default function Home() {
           alt={"mechanic fixing car tyre"}
           width={622}
           height={538}
-          className="mt-10 w-[315px] lg:w-[622px] h-[337px] lg:h-[538px]"
+          className="mt-10 home-about-img w-[315px] lg:w-[622px] h-[337px] lg:h-[538px] mx-auto"
         />
       </section>
 
@@ -84,7 +84,7 @@ export default function Home() {
           Reliable Products for Every Journey
         </h1>
 
-        <div className="mt-10 lg:mt-20 flex flex-col gap-8 lg:gap-0 lg:flex-row w-full lg:justify-between">
+        <div className="mt-10 lg:mt-20 home-services-grid grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-18 w-full">
           <div className="bg-white rounded-[14px] lg:rounded-2xl p-7 lg:p-8.5 flex flex-col gap-6 lg:gap-8.5 lg:max-w-95">
             <div className="flex flex-col w-16.5 lg:w-20 h-16.5 lg:h-20 rounded-full bg-[#16172B] items-center justify-center">
               <Image
@@ -196,8 +196,8 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <div className="h-75 lg:h-80 lg:max-w-84 rounded-[18.75px] py-5.5 px-5 bg-[#16172B]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 max-w-[360px] sm:max-w-full mx-auto lg:mx-0 lg:max-w-full lg:grid-cols-2 gap-6">
+            <div className="h-max min-h-75 lg:min-h-80 lg:max-w-84 rounded-[18.75px] py-5.5 px-5 bg-[#16172B]">
               <div className="flex flex-col gap-3">
                 <Image
                   src={"/fast-delivery-truck-van.png"}
@@ -221,7 +221,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="h-75 lg:h-80 lg:max-w-84 rounded-[18.75px] py-5.5 px-5 border border-[#00000026]">
+            <div className="h-max min-h-75 lg:min-h-80 lg:max-w-84 rounded-[18.75px] py-5.5 px-5 border border-[#00000026]">
               <div className="flex flex-col gap-3">
                 <Image
                   src={"/discount.png"}
@@ -246,7 +246,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="h-75 lg:h-80 lg:max-w-84 rounded-[18.75px] py-5.5 px-5 border border-[#00000026]">
+            <div className="h-max min-h-75 lg:min-h-80 lg:max-w-84 rounded-[18.75px] py-5.5 px-5 border border-[#00000026]">
               <div className="flex flex-col gap-3">
                 <Image
                   src={"/global.png"}
@@ -270,7 +270,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="h-75 lg:h-80 lg:max-w-84 rounded-[18.75px] py-5.5 px-5 border border-[#00000026]">
+            <div className="h-max min-h-75 lg:min-h-80 lg:max-w-84 rounded-[18.75px] py-5.5 px-5 border border-[#00000026]">
               <div className="flex flex-col gap-3">
                 <Image
                   src={"/support.png"}
@@ -299,7 +299,7 @@ export default function Home() {
       </section>
 
       {/* Request Quote */}
-      <section className="max-w-[375px] lg:max-w-full py-9 lg:py-0 px-7.5 lg:px-0 lg:h-[402px] home-rq-bg flex flex-col items-center">
+      <section className="max-w-full py-9 lg:py-0 px-7.5 lg:px-0 lg:h-[402px] home-rq-bg flex flex-col items-center">
         <div className="flex flex-col items-center lg:mt-12 gap-3 lg:gap-8">
           <h3 className="max-w-62 lg:max-w-full text-center text-[#222222] font-bold text-[22px] lg:text-[50px] leading-5.5 lg:leading-12 tracking-normal">
             Request a Free Quote Today

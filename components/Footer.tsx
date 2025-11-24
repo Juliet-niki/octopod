@@ -68,12 +68,12 @@ export default function Footer() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="flex-1 px-4 py-2 bg-transparent focus:outline-none font-normal text-xs lg:text-base placeholder:text-black"
+                className="flex-1 px-4 py-2 bg-transparent focus:outline-none font-normal text-[10px] sm:text-xs lg:text-base placeholder:text-black"
               />
 
               <button
                 type="submit"
-                className="cursor-pointer rounded-[18px] lg:rounded-4xl w-max bg-[#16172B] text-white font-bold px-3 lg:px-5 py-2.5 text-[10px] lg:text-base hover:opacity-90 transition-colors"
+                className="cursor-pointer rounded-[18px] lg:rounded-4xl w-max bg-[#16172B] text-white font-bold px-3 lg:px-5 py-2.5 text-[8px] sm:text-[10px] lg:text-base hover:opacity-90 transition-colors whitespace-nowrap shrink-0"
               >
                 Subscribe Now
               </button>
@@ -102,7 +102,7 @@ export default function Footer() {
         </div>
 
         <p className='font-normal text-white text-sm lg:text-lg'>
-          © 2025 Octopod Services All Rights Reserved
+          © {new Date().getFullYear()} Octopod Services All Rights Reserved
         </p>
 
         <div className='hidden lg:flex flex-row gap-2.5 items-center text-lg'>

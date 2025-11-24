@@ -66,13 +66,13 @@ export default function About() {
                     alt="A vertical four-part photo collage showing a mechanic crouching in a workshop, a mechanic touching a raised car's tire, and a close-up of a classic car's front end and headlight"
                     width={594}
                     height={420}
-                    className='mt-12 lg:mt-0 mb-16 w-84.5 lg:w-148.5 h-59.5 lg:h-105'
+                    className='mt-12 lg:mt-0 mb-16 mx-auto w-84.5 lg:w-148.5 h-59.5 lg:h-105 min-[600px]:w-135 min-[600px]:h-95'
                 />
             </section>
 
             {/* Service That Goes Beyond Supply */}
             <section className='flex flex-col gap-6 lg:gap-0 lg:flex-row lg:w-full lg:justify-between py-15 px-7.5 lg:px-10 xl:px-20'>
-                <div className='flex flex-col gap-6 lg:max-w-165'>
+                <div className='flex flex-col gap-6 lg:w-1/2'>
                     <h2 className='font-bold lg:font-medium text-[#333333] lg:text-[#16172B] text-[28px] lg:text-[55px] leading-9 lg:leading-16.5 tracking-normal text-center lg:text-left'>
                         Service That Goes Beyond Supply
                     </h2>
@@ -104,7 +104,7 @@ export default function About() {
                     </div>
                 </div>
 
-                <div className='flex flex-col lg:hidden gap-2.5'>
+                <div className='flex flex-col lg:hidden gap-2.5 mx-auto'>
                     <Image
                         src={"/expert-auto-consultation-service.jpg"}
                         alt="Expert consultation between mechanic and customer demonstrates service that goes beyond supply"
@@ -146,7 +146,7 @@ export default function About() {
                     </div>
                 </div>
 
-                <div className='hidden lg:flex flex-row gap-13.5'>
+                <div className='hidden lg:flex flex-row gap-13.5 lg:ml-20'>
                     <div className='flex flex-col h-59 items-center mt-2'>
                         <span className='w-3 h-3 rounded-full bg-[#F12328]'></span>
                         <span className='w-px flex-1 border-l-2 border-dashed border-[#D9C6B8]'></span>
@@ -194,7 +194,7 @@ export default function About() {
                     </h2>
                 </div>
 
-                <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-10'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 max-w-80 md:max-w-full lg:max-w-full mx-auto'>
                     {coreValues.map((value, index) => (
                         <div
                             key={index}
@@ -233,7 +233,7 @@ export default function About() {
                     </p>
                 </div>
 
-                <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-18'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-18 max-w-80 md:max-w-full lg:max-w-full mx-auto'>
                     {clientsLogos.map((logo, index) => (
                         <div key={index} className='flex bg-white rounded-xl py-9.5 px-6 shadow-sm items-center justify-center'>
                             <Image
