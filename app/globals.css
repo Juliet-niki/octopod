@@ -75,7 +75,7 @@ body {
   animation: scroll 25s linear infinite;
 }
 
-.home-rq-bg {
+/* .home-rq-bg {
   background-image: url("../public/home-rq-mobile.png");
   background-size: cover;
   background-position: center;
@@ -86,7 +86,7 @@ body {
   .home-rq-bg {
     background-image: url("../public/home-rq-desktop.png");
   }
-}
+} */
 
 .footer-bg {
   background-image: url("../public/footer-mobile.png");
