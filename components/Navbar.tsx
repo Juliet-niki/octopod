@@ -11,10 +11,10 @@ export default function Navbar() {
   function toggleMenu() {
     setShowMenu(!showMenu);
   }
-
+  // sm:bg-amber-700 md:bg-green-700 lg:bg-violet-700
   return (
     <header
-      className={`fixed top-0 left-0 w-full bg-white sm:bg-amber-700 md:bg-green-700 lg:bg-violet-700 z-50 ${
+      className={`fixed top-0 left-0 w-full bg-white z-50 ${
         showMenu ? "h-screen" : "h-max"
       } px-7.5 py-4 lg:px-10 xl:px-20 lg:py-6`}
     >
