@@ -26,12 +26,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${poppins.variable} font-sans antialiased`}
-      >
+      <body className={`${poppins.variable} font-sans antialiased`}>
         <Navbar />
-        <main className="flex flex-col w-full">{children}</main>
-        <Footer/>
+        <main className="flex flex-col w-full mt-[58px] lg:mt-[92px]">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
