@@ -7,10 +7,10 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero */}
-      <section className="bg-[url('/home-hero-mobile.png')] md:bg-[url('/home-hero-desktop.png')] bg-no-repeat bg-cover bg-center w-full h-screen flex flex-col md:flex-row">
+      <section className="bg-[url('/home-hero-mobile.png')] ml:bg-[url('/home-hero-desktop.png')] bg-no-repeat bg-cover bg-center w-full h-screen flex flex-col md:flex-row">
         <div className="my-0 mt-[72px] md:my-auto flex flex-col px-7.5 lg:px-10 xl:px-20 gap-3.75 lg:gap-5">
-          <div className="flex flex-col gap-3 lg:gap-6.5 max-w-full md:max-w-150 xl:max-w-169">
-            <h1 className="text-[28px] sm:text-[48px] md:text-[50px] lg:text-[60px] font-bold md:font-medium leading-9.5 sm:leading-16 lg:leading-17.5 tracking-normal text-white">
+          <div className="flex flex-col gap-3 lg:gap-6.5 max-w-full ml:max-w-150 xl:max-w-169">
+            <h1 className="text-[28px] sm:text-[40px] md:text-[48px] lg:text-[55px] xl:text-[60px] font-bold ml:font-medium leading-tight tracking-normal text-white">
               Trusted Supplier of Tyres, Lubricants and Batteries in Nigeria.
             </h1>
 
@@ -53,38 +53,43 @@ export default function Home() {
       </section>
 
       {/* About us */}
-      <section className="md:bg-[url('/about-the-program-desktop.png')] bg-no-repeat bg-cover bg-center flex flex-col lg:flex-row w-full gap-10 lg:gap-2.5 md:justify-between py-10.5 px-7.5 lg:px-10 xl:px-20">
-        <div className="flex flex-col gap-3 lg:max-w-135.5 my-auto">
-          <h4 className="font-medium text-xs md:text-lg leading-3 lg:leading-4 tracking-normal text-[#F12328]">
-            About us
-          </h4>
+      <section className="bg-none ml:bg-[url('/about-the-program-desktop.png')] bg-no-repeat bg-cover bg-center">
+        <div className="flex flex-col ml:flex-row gap-8 ml:gap-6 lg:gap-10 px-5 sm:px-8 lg:px-16 xl:px-20 py-5 md:py-10 lg:py-12 items-center ml:items-start">
+          {/* Text Content */}
+          <div className="flex flex-col gap-2 lg:gap-3 w-full ml:w-1/2 ml:max-w-md lg:max-w-xl">
+            <h4 className="font-medium text-xs ml:text-sm lg:text-base leading-3 lg:leading-4 tracking-normal text-[#F12328]">
+              About us
+            </h4>
+            <h1 className="font-bold ml:font-medium text-[#222222] text-2xl sm:text-3xl ml:text-[36px] lg:text-[42px] xl:text-5xl leading-tight ml:leading-snug lg:leading-tight">
+              Driven by Quality, Inspired by Value
+            </h1>
 
-          <h2 className="font-bold text-[28px] sm:text-[32px] md:text-[42px] lg:text-[55px] text-[#01000E] leading-9.5 md:leading-14 lg:leading-16.5 tracking-normal">
-            Driven by Quality, Inspired by Value
-          </h2>
+            <p className="font-normal text-[#333333] text-xs sm:text-sm lg:text-[16px] xl:text-lg leading-relaxed">
+              Octopod Services is your trusted automotive partner in Nigeria. We
+              deliver premium tyres, batteries, and engine oils with competitive
+              pricing, nationwide delivery, and dedicated support that makes
+              every journey safer and smarter.
+            </p>
 
-          <p className="font-normal text-xs lg:text-lg text-[#333333] leading-5.5 lg:leading-7 tracking-normal">
-            Octopod Services is your trusted automotive partner in Nigeria. We
-            deliver premium tyres, batteries, and engine oils with competitive
-            pricing, nationwide delivery, and dedicated support that makes every
-            journey safer and smarter.
-          </p>
+            <Link
+              href={"/about"}
+              className="bg-[#16172B] rounded-lg py-3 px-7 ml:py-3 ml:px-8 lg:py-3.5 lg:px-10 w-max font-semibold text-white text-sm lg:text-base hover:bg-[#16172B]/90 transition-colors"
+            >
+              Learn More
+            </Link>
+          </div>
 
-          <Link
-            href="/about"
-            className="rounded-xl lg:rounded-2xl py-2.5 lg:py-4 px-8 lg:px-16 bg-[#16172B] w-max font-bold text-white text-xs lg:text-base lg:leading-6 tracking-normal"
-          >
-            Learn More
-          </Link>
+          {/* Image Collage */}
+          <div className="flex flex-row gap-3 lg:gap-4 w-full ml:w-1/2 justify-center ml:justify-end items-center">
+            <Image
+              src={"/mechanic-fixing-car-tyre.png"}
+              alt="mechanic fixing car tyre"
+              width={594}
+              height={420}
+              className="w-full max-w-md ml:max-w-lg lg:max-w-xl h-auto"
+            />
+          </div>
         </div>
-
-        <Image
-          src={"/mechanic-fixing-car-tyre.png"}
-          alt={"mechanic fixing car tyre"}
-          width={622}
-          height={538}
-          className="my-auto mx-auto md:mx-0 object-cover w-full lg:w-[622px] h-auto sm:h-[400px] lg:h-[538px] rounded-2xl"
-        />
       </section>
 
       {/* Our Services */}
@@ -97,11 +102,11 @@ export default function Home() {
           Reliable Products for Every Journey
         </h3>
 
-        <div className="mt-10 lg:mt-12  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between gap-8 md:gap-10 lg:gap-18 w-full">
+        <div className="mt-10 lg:mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between gap-8 md:gap-10 w-full">
           {ourServices.map((service, index) => (
             <article
               key={index}
-              className="bg-white rounded-[14px] lg:rounded-2xl p-7 lg:p-8.5 flex flex-col gap-6 lg:gap-8.5 lg:max-w-95"
+              className="bg-white rounded-[14px] lg:rounded-2xl p-7 lg:p-8.5 flex flex-col gap-6 lg:gap-8.5 h-[374px] sm:h-auto"
             >
               <div className="flex flex-col w-16.5 lg:w-20 h-16.5 lg:h-20 rounded-full bg-[#16172B] items-center justify-center">
                 <Image
@@ -118,7 +123,7 @@ export default function Home() {
                   {service.title}
                 </h4>
 
-                <p className="font-normal text-[#333333] text-[13px] lg:text-base tracking-normal">
+                <p className="font-normal text-[#333333] text-[13px] ml:text-sm xl:text-base tracking-normal">
                   {service.description}
                 </p>
               </div>
@@ -135,14 +140,14 @@ export default function Home() {
       </section>
 
       {/* Why Octopod is the Right Partner */}
-      <section className="flex flex-col w-full px-7.5 lg:px-10 xl:px-20 py-10.5 lg:py-24">
-        <div className="flex flex-col gap-10 lg:gap-[2%] lg:flex-row lg:justify-between w-full">
-          <div className="w-full lg:w-[43%] flex flex-col gap-3 lg:gap-7 mt-auto">
-            <h2 className="font-bold text-black text-[28px] sm:text-[32px] md:text-[40px] lg:text-[55px] leading-9.5 md:leading-14 lg:leading-16.5 tracking-normal">
+      <section className="flex flex-col w-full px-5 sm:px-8 lg:px-16 xl:px-20 py-10 md:py-16 lg:py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-[40%_auto_2fr] lg:gap-10 xl:gap-14 w-full lg:items-center">
+          <div className="w-full flex flex-col gap-3 lg:gap-7">
+            <h2 className="font-bold ml:font-medium text-black text-2xl sm:text-3xl md:text-4xl ml:text-[40px] lg:text-[50px] xl:text-[55px] leading-tight tracking-normal">
               Why Octopod is the Right Partner
             </h2>
 
-            <p className="font-normal text-[#333333] text-xs sm:text-sm lg:text-[22px] leading-5 lg:leading-8 tracking-normal">
+            <p className="font-normal text-[#333333] text-xs sm:text-sm lg:text-base xl:text-[22px] leading-5 lg:leading-8 tracking-normal ml:max-w-[90%] lg:max-w-full">
               Beyond quality products, we prioritise reliability, efficiency,
               and long-term partnerships to help companies reduce downtime,
               optimize costs, and focus on growth.
@@ -150,17 +155,17 @@ export default function Home() {
 
             <Link
               href={"/quote"}
-              className="lg:mt-16 lg:mb-5 w-max bg-[#16172B] rounded-xl lg:rounded-2xl py-2.5 lg:py-4 px-6.5 lg:px-14 font-bold text-[10px] lg:text-base text-white"
+              className="mb-8 lg:mt-16 w-max bg-[#16172B] rounded-xl lg:rounded-2xl py-2.5 lg:py-4 px-6.5 lg:px-14 font-bold text-[10px] lg:text-base text-white"
             >
               Request Quote
             </Link>
           </div>
 
-          <div className="w-full lg:w-[55%] grid grid-cols-1 sm:grid-cols-2 mx-auto lg:mx-0 lg:grid-cols-2 gap-6">
+          <div className="w-full col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
             {rightPartnerDeals.map((deal, index) => (
               <div
                 key={index}
-                className="group/partner h-max min-h-72 lg:min-h-80 lg:max-w-84 rounded-[18.75px] py-5.5 px-5 first:bg-[#16172B] first:border-none border border-[#00000026]"
+                className="group/partner rounded-[18.75px] py-5.5 px-5 first:bg-[#16172B] first:border-none border border-[#00000026] h-[300px] sm:h-auto"
               >
                 <div className="flex flex-col gap-3">
                   <Image

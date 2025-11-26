@@ -8,40 +8,47 @@ export default function Services() {
   return (
     <div className="flex flex-col bg-[#F5F8FA]">
       {/* Hero */}
-      <section className="bg-none md:bg-[url('/services-hero-bg.png')] bg-no-repeat bg-cover bg-center flex flex-col md:flex-row gap-10 md:gap-4 px-5 lg:px-7 xl:px-20 pt-5 sm:pt-8 lg:pt-7 pb-5 w-full md:justify-between items-center">
-        <div className="flex flex-col gap-4 lg:gap-4.5 w-full md:max-w-110 lg:max-w-150">
-          <h1 className="font-bold md:font-medium text-black text-[28px] sm:text-3xl md:text-4xl lg:text-5xl leading-9.5 sm:leading-10 md:leading-14 lg:leading-16 tracking-normal">
-            Complete Automotive Solutions for Nigerian Businesses
-          </h1>
+      <section className="bg-none ml:bg-[url('/services-hero-bg.png')] bg-no-repeat bg-cover bg-center">
+        <div className="flex flex-col ml:flex-row gap-8 ml:gap-6 lg:gap-10 px-5 sm:px-8 lg:px-16 xl:px-20 py-5 md:py-10 lg:py-12 items-center ml:items-start">
+          {/* Text Content */}
+          <div className="flex flex-col gap-5 lg:gap-6 w-full ml:w-1/2 ml:max-w-md lg:max-w-xl">
+            <h1 className="font-bold ml:font-medium text-[#222222] text-2xl sm:text-3xl ml:text-[36px] lg:text-[42px] xl:text-5xl leading-tight ml:leading-snug lg:leading-tight">
+              Complete Automotive Solutions for Nigerian Businesses
+            </h1>
 
-          <p className="font-normal text-black text-[10px] sm:text-xs md:text-sm leading-4 sm:leading-5 md:leading-6.5 tracking-normal lg:max-w-140">
-            At Octopod, we supply premium automotive products to fleet managers,
-            logistics companies, and commercial operators across Nigeria. We
-            deliver nationwide from Lagos, with comprehensive support to major
-            commercial centers including Abuja, Port Harcourt, and Ibadan.
-          </p>
+            <p className="font-normal text-[#333333] text-xs sm:text-sm lg:text-[16px] xl:text-lg leading-relaxed">
+              At Octopod, we supply premium automotive products to fleet
+              managers, logistics companies, and commercial operators across
+              Nigeria. We deliver nationwide from Lagos, with comprehensive
+              support to major commercial centers including Abuja, Port
+              Harcourt, and Ibadan.
+            </p>
 
-          <Link
-            href={"#"}
-            className="bg-[#F12328] rounded-lg lg:rounded-2xl py-2.5 lg:py-3 px-4 lg:px-12 w-max font-bold text-white text-xs lg:text-base"
-          >
-            Explore Services
-          </Link>
+            <Link
+              href={"#"}
+              className="bg-[#F12328] rounded-lg py-3 px-7 ml:py-3 ml:px-8 lg:py-3.5 lg:px-10 w-max font-semibold text-white text-sm lg:text-base hover:bg-[#d11f24] transition-colors"
+            >
+              Explore Services
+            </Link>
+          </div>
+
+          {/* Image Collage */}
+          <div className="flex flex-row gap-3 lg:gap-4 w-full ml:w-1/2 justify-center ml:justify-end items-center">
+            <Image
+              src={"/automotive-maintenance-collage.png"}
+              alt="A three-part collage showing car maintenance: a mechanic working under a car, fresh engine oil being poured, and a mechanic working on an engine bay"
+              width={594}
+              height={420}
+              className="w-full max-w-md ml:max-w-lg lg:max-w-xl h-auto"
+            />
+          </div>
         </div>
-
-        <Image
-          src={"/automotive-maintenance-collage.png"}
-          alt="A vertical four-part photo collage showing a mechanic crouching in a workshop, a mechanic touching a raised car's tire, and a close-up of a classic car's front end and headlight"
-          width={594}
-          height={420}
-          className="w-full h-auto md:min-w-80 md:h-96 lg:min-w-140 lg:h-105"
-        />
       </section>
 
       {/* What We Offer */}
-      <section className="flex flex-col pt-2.5 pb-10 lg:py-20 px-7.5 lg:px-10 xl:px-20">
-        <div className="flex flex-col gap-8.75">
-          <h2 className="font-bold md:font-medium text-black text-[28px] sm:text-[30px] md:text-[36px] lg:text-[50px] leading-9.5 tracking-normal mx-auto">
+      <section className="flex flex-col py-8 md:py-10 lg:py-12 px-7.5 lg:px-10 xl:px-20">
+        <div className="flex flex-col gap-8">
+          <h2 className="font-bold ml:font-medium text-black text-2xl sm:text-3xl ml:text-[36px] lg:text-[40px] leading-9.5 tracking-normal mx-auto">
             What We Offer
           </h2>
 
@@ -177,7 +184,7 @@ export default function Services() {
               </div>
               <div className="w-[45%] lg:w-[50%] h-[400px] lg:h-[500px] overflow-hidden">
                 <Image
-                  src={"/car-battery-testing.png"}
+                  src={"/oil-refill.png"}
                   alt={"car mechanic changing car tyre"}
                   width={800}
                   height={750}

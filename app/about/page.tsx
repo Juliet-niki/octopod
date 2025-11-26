@@ -38,48 +38,55 @@ export default function About() {
   return (
     <div className="flex flex-col bg-[#F5F8FA]">
       {/* Hero */}
-      <section className="bg-none md:bg-[url('/services-hero-bg.png')] bg-no-repeat bg-cover bg-center flex flex-col md:flex-row gap-10 md:gap-4 px-5 lg:px-7 xl:px-20 pt-5 sm:pt-8 lg:pt-7 pb-5 w-full md:justify-between items-center">
-        <div className="flex flex-col gap-4 lg:gap-4.5 w-full md:max-w-100 lg:max-w-150">
-          <h1 className="font-bold md:font-medium text-black text-[28px] sm:text-[38px] md:text-[50px] lg:text-6xl leading-9.5 sm:leading-10 md:leading-16 lg:leading-20 tracking-normal">
-            The Octopod Journey
-          </h1>
+      <section className="bg-none ml:bg-[url('/services-hero-bg.png')] bg-no-repeat bg-cover bg-center">
+        <div className="flex flex-col ml:flex-row gap-8 ml:gap-6 lg:gap-10 px-5 sm:px-8 lg:px-16 xl:px-20 py-5 md:py-10 lg:py-12 items-center ml:items-start">
+          {/* Text Content */}
+          <div className="flex flex-col gap-4 lg:gap-6 w-full ml:w-1/2 ml:max-w-md lg:max-w-xl">
+            <h1 className="font-bold ml:font-medium text-[#222222] text-2xl sm:text-4xl ml:text-[40px] lg:text-[55px] xl:text-6xl leading-tight ml:max-w-[70%] lg:max-w-full">
+              The Octopod Journey
+            </h1>
 
-          <p className="font-normal text-black text-[10px] sm:text-xs md:text-sm leading-4 sm:leading-5 md:leading-6.5 tracking-normal lg:max-w-140">
-            Octopod was founded to address long-standing gaps in Nigeria&#39;s
-            automotive supply sector. Many businesses faced fragmented supplier
-            networks, excessive bureaucracy, inflated costs, and frequent
-            stockouts that disrupted operations. We saw the need for a simpler
-            and more dependable approach that prioritised quality, consistency,
-            and service. That&#39;s why we set out to deliver high-quality
-            tyres, lubricants, and batteries at competitive prices, supported by
-            a seamless and responsive customer experience.
-          </p>
+            <p className="font-normal text-[#333333] text-[11px] sm:text-xs lg:text-sm xl:text-base leading-relaxed">
+              Octopod was founded to address long-standing gaps in Nigeria&#39;s
+              automotive supply sector. Many businesses faced fragmented
+              supplier networks, excessive bureaucracy, inflated costs, and
+              frequent stockouts that disrupted operations. We saw the need for
+              a simpler and more dependable approach that prioritised quality,
+              consistency, and service. That&#39;s why we set out to deliver
+              high-quality tyres, lubricants, and batteries at competitive
+              prices, supported by a seamless and responsive customer
+              experience.
+            </p>
 
-          <Link
-            href={"#"}
-            className="bg-[#F12328] rounded-lg lg:rounded-2xl py-2.5 lg:py-3 px-4 lg:px-12 w-max font-bold text-white text-xs lg:text-base"
-          >
-            Learn More
-          </Link>
+            <Link
+              href={"#"}
+              className="bg-[#F12328] rounded-lg py-3 px-7 ml:py-3 ml:px-8 lg:py-3.5 lg:px-10 w-max font-semibold text-white text-sm lg:text-base hover:bg-[#d11f24] transition-colors"
+            >
+              Learn More
+            </Link>
+          </div>
+
+          {/* Image Collage */}
+          <div className="flex flex-row gap-3 lg:gap-4 w-full ml:w-1/2 justify-center ml:justify-end items-center">
+            <Image
+              src={"/mechanic-auto-service-collage.png"}
+              alt="A vertical four-part photo collage showing a mechanic crouching in a workshop, a mechanic touching a raised car's tire, and a close-up of a classic car's front end and headlight"
+              width={594}
+              height={420}
+              className="w-full max-w-md ml:max-w-lg lg:max-w-xl h-auto"
+            />
+          </div>
         </div>
-
-        <Image
-          src={"/mechanic-auto-service-collage.png"}
-          alt="A vertical four-part photo collage showing a mechanic crouching in a workshop, a mechanic touching a raised car's tire, and a close-up of a classic car's front end and headlight"
-          width={594}
-          height={420}
-          className=" w-full h-auto md:min-w-90 md:h-96 lg:min-w-140 lg:h-105"
-        />
       </section>
 
       {/* Service That Goes Beyond Supply */}
       <section className="flex flex-col gap-6 lg:gap-0 lg:flex-row lg:w-full lg:justify-between py-16 px-7.5 lg:px-10 xl:px-20">
-        <div className="flex flex-col gap-6 lg:w-1/2">
-          <h2 className="font-bold md:font-medium text-[#333333] lg:text-[#16172B] text-[28px] sm:text-[32px] md:text-[42px] lg:text-[55px] leading-9 md:leading-14  lg:leading-16.5 tracking-normal text-center lg:text-left">
+        <div className="flex flex-col gap-4 lg:gap-6 lg:w-1/2">
+          <h2 className="font-bold ml:font-medium text-[#333333] lg:text-[#16172B] text-2xl sm:text-3xl md:text-4xl ml:text-[40px] lg:text-[55px] leading-9 md:leading-14  lg:leading-16.5 tracking-normal text-center lg:text-left">
             Service That Goes Beyond Supply
           </h2>
 
-          <p className="font-normal text-[#333740] text-center lg:text-left text-xs sm:text-sm lg:text-base">
+          <p className="font-normal text-[#333740] text-center sm:w-[95%] sm:mx-auto lg:mx-0 lg:w-full lg:text-left text-[10px] sm:text-xs md:text-sm lg:text-base">
             We built our reputation on consistency, trust and service that goes
             beyond supply. Over the years, we have grown into a trusted partner
             for organizations that depend on automotive solutions to keep their
@@ -185,7 +192,7 @@ export default function About() {
           <h5 className="font-medium text-[#F12328] text-xs sm:text-sm md:text-lg">
             Our Core Values
           </h5>
-          <h2 className="font-bold md:font-medium text-black text-[28px] sm:text-[32px] md:text-[42px] lg:text-[55px] leading-9.5 md:leading-14 lg:leading-16.5 tracking-normal">
+          <h2 className="font-bold ml:font-medium text-black text-2xl sm:text-3xl md:text-4xl ml:text-[40px] lg:text-[55px] leading-9.5 md:leading-14 lg:leading-16.5 tracking-normal">
             Values That Drive Octopod Forward
           </h2>
         </div>
@@ -221,7 +228,7 @@ export default function About() {
       {/* Our Clients */}
       <section className="flex flex-col gap-10 py-14 lg:py-20 px-7.5 lg:px-10 xl:px-20">
         <div className="flex flex-col items-center gap-2">
-          <h2 className="font-bold text-[#313131] md:font-medium text-3xl sm:text-[32px] md:text-[40px] lg:text-[55px]">
+          <h2 className="font-bold text-[#313131] ml:font-medium text-3xl sm:text-[32px] md:text-[40px] lg:text-[55px]">
             Our Clients
           </h2>
           <p className="text-[#333333] text-center font-normal text-xs sm:text-sm lg:text-lg">

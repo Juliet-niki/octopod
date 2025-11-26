@@ -31,7 +31,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <ul className="hidden lg:flex items-center list-none gap-8 m-0 p-0 font-semibold text-[17px] text-[#333333]">
+        <ul className="hidden ml:flex items-center list-none gap-8 m-0 p-0 font-semibold text-[17px] text-[#333333]">
           <li>
             <Link href="/">Home</Link>
           </li>
