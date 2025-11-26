@@ -11,7 +11,7 @@ export default function Navbar() {
   function toggleMenu() {
     setShowMenu(!showMenu);
   }
-  // sm:bg-amber-700 md:bg-green-700 lg:bg-violet-700
+
   return (
     <header
       className={`fixed top-0 left-0 w-full bg-white z-50 ${

@@ -10,11 +10,11 @@ export default function Home() {
       <section className="bg-[url('/home-hero-mobile.png')] md:bg-[url('/home-hero-desktop.png')] bg-no-repeat bg-cover bg-center w-full h-screen flex flex-col md:flex-row">
         <div className="my-0 mt-[72px] md:my-auto flex flex-col px-7.5 lg:px-10 xl:px-20 gap-3.75 lg:gap-5">
           <div className="flex flex-col gap-3 lg:gap-6.5 max-w-full md:max-w-150 xl:max-w-169">
-            <h1 className="text-[28px] sm:text-[48px] md:text-[50px] lg:text-[60px] font-bold md:font-medium home-hero-heading leading-9.5 sm:leading-16 lg:leading-17.5 tracking-normal text-white">
+            <h1 className="text-[28px] sm:text-[48px] md:text-[50px] lg:text-[60px] font-bold md:font-medium leading-9.5 sm:leading-16 lg:leading-17.5 tracking-normal text-white">
               Trusted Supplier of Tyres, Lubricants and Batteries in Nigeria.
             </h1>
 
-            <p className="font-normal home-hero-p leading-4 sm:leading-5 md:leading-6.5 tracking-normal md:max-w-140 xl:max-w-159.5 text-[#F3F3F3] text-[10px] sm:text-[14px] md:text-[16px]">
+            <p className="font-normal leading-4 sm:leading-5 md:leading-6.5 tracking-normal md:max-w-140 xl:max-w-159.5 text-[#F3F3F3] text-[10px] sm:text-[14px] md:text-[16px]">
               Octopod Services delivers quality car and truck tyres, automotive
               batteries, and high-performance engine oils & lubricants for
               businesses across Nigeria.
@@ -31,7 +31,7 @@ export default function Home() {
       </section>
 
       {/* Partners */}
-      <section className="relative w-full overflow-hidden bg-transparent py-3">
+      <section className="relative w-full overflow-hidden bg-[#D9FEF159] mt-5 py-3">
         <div className="flex animate-scroll gap-12 w-max">
           {[...partnerLogos, ...partnerLogos, ...partnerLogos].map(
             (logo, index) => (
@@ -53,7 +53,7 @@ export default function Home() {
       </section>
 
       {/* About us */}
-      <section className="flex flex-col lg:flex-row w-full gap-10 lg:gap-2.5 md:justify-between py-10.5 px-7.5 lg:px-10 xl:px-20">
+      <section className="md:bg-[url('/about-the-program-desktop.png')] bg-no-repeat bg-cover bg-center flex flex-col lg:flex-row w-full gap-10 lg:gap-2.5 md:justify-between py-10.5 px-7.5 lg:px-10 xl:px-20">
         <div className="flex flex-col gap-3 lg:max-w-135.5 my-auto">
           <h4 className="font-medium text-xs md:text-lg leading-3 lg:leading-4 tracking-normal text-[#F12328]">
             About us

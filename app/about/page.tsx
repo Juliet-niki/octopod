@@ -38,13 +38,13 @@ export default function About() {
   return (
     <div className="flex flex-col bg-[#F5F8FA]">
       {/* Hero */}
-      <section className="bg-none md:bg-[url('/services-hero-bg.png')] bg-no-repeat bg-cover bg-center flex flex-col md:flex-row gap-10 md:gap-4 px-5 lg:px-7 xl:px-20 pt-5 sm:pt-8 lg:pt-7 pb-5 w-full md:justify-between">
-        <div className="flex flex-col gap-4 lg:gap-4.5 lg:max-w-168.5">
-          <h1 className="font-bold md:font-medium text-black text-[28px] sm:text-[38px] md:text-[50px] lg:text-[60px] leading-9.5 sm:leading-10 md:leading-16 lg:leading-20 tracking-normal">
+      <section className="bg-none md:bg-[url('/services-hero-bg.png')] bg-no-repeat bg-cover bg-center flex flex-col md:flex-row gap-10 md:gap-4 px-5 lg:px-7 xl:px-20 pt-5 sm:pt-8 lg:pt-7 pb-5 w-full md:justify-between items-center">
+        <div className="flex flex-col gap-4 lg:gap-4.5 w-full md:max-w-100 lg:max-w-150">
+          <h1 className="font-bold md:font-medium text-black text-[28px] sm:text-[38px] md:text-[50px] lg:text-6xl leading-9.5 sm:leading-10 md:leading-16 lg:leading-20 tracking-normal">
             The Octopod Journey
           </h1>
 
-          <p className="font-normal text-black text-[10px] sm:text-xs md:text-sm lg:text-base leading-4 sm:leading-5 lg:leading-6.5 tracking-normal lg:max-w-159.5">
+          <p className="font-normal text-black text-[10px] sm:text-xs md:text-sm leading-4 sm:leading-5 md:leading-6.5 tracking-normal lg:max-w-140">
             Octopod was founded to address long-standing gaps in Nigeria&#39;s
             automotive supply sector. Many businesses faced fragmented supplier
             networks, excessive bureaucracy, inflated costs, and frequent
@@ -68,7 +68,7 @@ export default function About() {
           alt="A vertical four-part photo collage showing a mechanic crouching in a workshop, a mechanic touching a raised car's tire, and a close-up of a classic car's front end and headlight"
           width={594}
           height={420}
-          className="object-cover w-full h-auto md:w-125 md:h-90 lg:w-148.5 lg:h-105"
+          className=" w-full h-auto md:min-w-90 md:h-96 lg:min-w-140 lg:h-105"
         />
       </section>
 
