@@ -236,7 +236,7 @@ export default function About() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-10 lg:gap-18 mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 ml:grid-cols-3 gap-5 md:gap-7 lg:gap-8">
           {clientsLogos.map((logo, index) => (
             <div
               key={index}

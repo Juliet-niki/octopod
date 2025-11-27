@@ -52,7 +52,7 @@ export default function Services() {
             What We Offer
           </h2>
 
-          <div className="flex flex-col gap-8.5 md:hidden">
+          <div className="flex flex-col gap-8.5 ml:hidden">
             {products.map((product, index) => (
               <div key={index} className="flex flex-col">
                 <div className="bg-[#A8DDCB] rounded-t-lg px-6 pt-5 pb-8">
@@ -93,10 +93,10 @@ export default function Services() {
             ))}
           </div>
 
-          <div className="hidden md:flex flex-col gap-2.5">
+          <div className="hidden ml:flex flex-col gap-2.5">
             {/* Tyres */}
             <div className="relative flex flex-row my-10 w-full">
-              <div className="w-[45%] lg:w-[50%] h-[400px] lg:h-[500px] overflow-hidden">
+              <div className="w-[57%] lg:w-[60%] h-[450px] lg:h-[530px] overflow-hidden">
                 <Image
                   src={"/tyre-change.png"}
                   alt={"car mechanic changing car tyre"}
@@ -106,8 +106,8 @@ export default function Services() {
                 />
               </div>
 
-              <div className="absolute top-12 left-[32%] lg:left-[35%] bg-[#A8DDCB] rounded-xl px-8 lg:px-10 pt-8 lg:pt-10 pb-10 lg:pb-12 w-[68%] lg:w-[65%] shadow-lg">
-                <div className="flex flex-col gap-5 lg:gap-6">
+              <div className="absolute top-8 left-[45%] lg:left-[50%] bg-[#A8DDCB] rounded-xl px-8 lg:px-10 pt-3 lg:pt-5 pb-8 lg:pb-10 w-[55%] lg:w-[50%] shadow-lg">
+                <div className="flex flex-col gap-5 lg:gap-4">
                   <div className="flex flex-col gap-3 lg:gap-5">
                     <h3 className="font-bold text-[#222222] text-3xl lg:text-4xl">
                       Tyres
@@ -146,7 +146,7 @@ export default function Services() {
 
             {/* Lubricants */}
             <div className="relative flex flex-row-reverse my-10 w-full">
-              <div className="absolute top-12 right-[32%] lg:right-[35%] bg-[#A8DDCB] rounded-xl px-8 lg:px-10 pt-8 lg:pt-10 pb-10 lg:pb-12 w-[68%] lg:w-[65%] shadow-lg">
+              <div className="absolute top-8 right-[45%] lg:right-[50%] bg-[#A8DDCB] rounded-xl px-8 lg:px-10 pt-3 lg:pt-5 pb-8 lg:pb-10 w-[55%] lg:w-[50%] shadow-lg">
                 <div className="flex flex-col gap-5 lg:gap-6">
                   <div className="flex flex-col gap-3 lg:gap-5">
                     <h3 className="font-bold text-[#222222] text-3xl lg:text-4xl">
@@ -182,7 +182,7 @@ export default function Services() {
                   </Link>
                 </div>
               </div>
-              <div className="w-[45%] lg:w-[50%] h-[400px] lg:h-[500px] overflow-hidden">
+              <div className="w-[57%] lg:w-[60%] h-[450px] lg:h-[530px] overflow-hidden">
                 <Image
                   src={"/oil-refill.png"}
                   alt={"car mechanic changing car tyre"}
@@ -195,7 +195,7 @@ export default function Services() {
 
             {/* Battries */}
             <div className="relative flex flex-row my-10 w-full">
-              <div className="w-[45%] lg:w-[50%] h-[400px] lg:h-[500px] overflow-hidden">
+              <div className="w-[57%] lg:w-[60%] h-[450px] lg:h-[530px] overflow-hidden">
                 <Image
                   src={"/car-battery-testing.png"}
                   alt={"car mechanic changing car tyre"}
@@ -205,7 +205,7 @@ export default function Services() {
                 />
               </div>
 
-              <div className="absolute top-12 left-[32%] lg:left-[35%] bg-[#A8DDCB] rounded-xl px-8 lg:px-10 pt-8 lg:pt-10 pb-10 lg:pb-12 w-[68%] lg:w-[65%] shadow-lg">
+              <div className="absolute top-8 left-[45%] lg:left-[50%] bg-[#A8DDCB] rounded-xl px-8 lg:px-10 pt-3 lg:pt-5 pb-8 lg:pb-10 w-[55%] lg:w-[50%] shadow-lg">
                 <div className="flex flex-col gap-5 lg:gap-6">
                   <div className="flex flex-col gap-3 lg:gap-5">
                     <h3 className="font-bold text-[#222222] text-3xl lg:text-4xl">
